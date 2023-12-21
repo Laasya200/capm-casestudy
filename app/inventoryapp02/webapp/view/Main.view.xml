@@ -1,0 +1,80 @@
+<mvc:View controllerName="com.casestudy.inventoryapp02.inventoryapp02.controller.Main"
+    xmlns:mvc="sap.ui.core.mvc" displayBlock="true"
+    xmlns="sap.m">
+    <Page id="page" title="{i18n>title}">
+        <content>
+             <Table items="{/Inventory}" mode="SingleSelectMaster"  selectionChange=".onRowSelection" >
+            <columns>
+                <Column>
+                    <Label text="Material ID" />
+                </Column>
+                <Column>
+                    <Label text="Material Description" />
+                </Column>
+                <Column>
+                    <Label text="Plant" />
+                </Column>
+                <Column>
+                    <Label text="Warehouse ID" />
+                </Column>
+                <Column>
+                    <Label text="SubDivision ID" />
+                </Column>
+                 <Column>
+                    <Label text="Vendor" />
+                </Column>
+                   <Column>
+                    <Label text="Quantity" />
+                </Column>
+                   <Column>
+                    <Label text="BaseUnitofQuantity" />
+                </Column>
+                   <Column>
+                    <Label text="Username" />
+                </Column>
+                   <Column>
+                    <Label text="DateofEntry" />
+                </Column>
+                  <Column>
+                    <Label text="Feedback" />
+                </Column>
+            </columns>
+            <ColumnListItem >
+          <cells>
+            <Text text="{MaterialID}" />
+          </cells>
+          <cells>
+            <Text text="{MaterialDescription}" />
+          </cells>
+          <cells>
+            <Text text="{Plant}" />
+          </cells>
+          <cells>
+            <Text text="{WarehouseID}" />
+          </cells>
+          <cells>
+            <Text text="{SubDivisionID}" />
+          </cells>
+          <cells>
+            <Text text="{Vendor}" />
+          </cells>
+            <cells>
+            <Text text="{Quantity}" />
+          </cells>
+            <cells>
+            <Text text="{BaseUnitofQuantity}" />
+          </cells>
+            <cells>
+            <Text text="{Username}" />
+          </cells>
+            <cells>
+            <Text text="{DateofEntry}" />
+          </cells>
+            <cells>
+            <Text text="{Feedback}" />
+          </cells>
+        </ColumnListItem>
+                </Table>
+        </content>
+    </Page>
+</mvc:View>
